@@ -4,7 +4,7 @@ print("your first number is " +num1)
 num2= input("Please enter second number ")
 print("Your second number is " + num2)
 if(num1 > num2):
-    print("second number is the smallest")
+    print("Second number is the smallest")
 if(num1 < num2):
     print("First number is smallest")
 if(num1 == num2):
