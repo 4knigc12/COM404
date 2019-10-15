@@ -1,3 +1,4 @@
+#  def fuctions and useing a for loop to display number of steps crossed
 def cross_bridge(steps):
     if steps >5:
         print("The bridge is collapsing!")
@@ -10,10 +11,8 @@ def cross_bridge(steps):
     else:
         print("We must keep going")    
  
-cross_bridge(2)
+cross_bridge(3)
 cross_bridge(6)
-
-        
 
 
 
