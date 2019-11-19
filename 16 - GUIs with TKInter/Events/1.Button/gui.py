@@ -43,6 +43,7 @@ class Gui(Tk):
         self.tickets_entry = Entry(self.outer_frame)
         self.tickets_entry.grid(row=2, column=0, sticky=W)
         self.tickets_entry.configure(width=40)
+        
 
     def __add_buy_button(self,):
         self.buy_button=Button(self.outer_frame)
@@ -51,4 +52,12 @@ class Gui(Tk):
         self.buy_button.bind("<ButtonRelease-1>", self.__buy_button_clicked)
 
     def __buy_button_clicked(self,event):
-        messagebox.showinfo("purchaesd!", "You have purcahsed the tickets!")
+        responce = int(self.tickets_entry.get())
+        if responce ==1:
+            messagebox.showinfo("purchaesd!", "You have purcahsed 1 tickets!")
+        elif responce > 1:
+            messagebox.showinfo("purchaesd!", "You have purcahsed " + str(responce) + "tickets")
+        else:
+            messagebox.showinfo("Purchased!", "Invalid Ticket")
+        
+    
